@@ -9,13 +9,13 @@ public static class AutoMoqFixtureBuilder
     {
         var fixture = new Fixture()
             .Customize(new AutoMoqCustomization { ConfigureMembers = true, GenerateDelegates = true });
-        
+
         fixture.Behaviors
             .OfType<ThrowingRecursionBehavior>()
             .ToList()
             .ForEach(b => fixture.Behaviors.Remove(b));
         fixture.Behaviors.Add(new OmitOnRecursionBehavior());
-        
+
         return fixture;
     }
 }
