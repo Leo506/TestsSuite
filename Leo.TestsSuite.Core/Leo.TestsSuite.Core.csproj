@@ -5,6 +5,17 @@
         <LangVersion>latest</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <PackageId>Leo.TestsSuite.Core</PackageId>
+        <Authors>Levin Artem</Authors>
+        <Version>1.0.0</Version>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Title>Tests suite</Title>
+        <Description>Library with all you need for unit testing</Description>
+        <RepositoryUrl>https://github.com/Leo506/TestsSuite</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <Copyright>Copyright (c) Artem Levin 2025</Copyright>
+        <PackageTags>testing</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

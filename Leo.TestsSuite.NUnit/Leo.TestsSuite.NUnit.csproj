@@ -6,7 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsPackable>true</IsPackable>
-        <PackageId>DatabaseConnectionInspector</PackageId>
+        <PackageId>Leo.TestsSuite.NUnit</PackageId>
         <Authors>Levin Artem</Authors>
         <Version>1.0.0</Version>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
