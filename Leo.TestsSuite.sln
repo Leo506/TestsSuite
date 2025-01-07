@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leo.TestsSuite.NUnit", "Leo.TestsSuite.NUnit\Leo.TestsSuite.NUnit.csproj", "{7286B863-2A52-4E16-9452-6E9280F40FE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leo.TestsSuite.Core", "Leo.TestsSuite.Core\Leo.TestsSuite.Core.csproj", "{0246BE17-B397-44E9-A02C-A0E54876D5A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7286B863-2A52-4E16-9452-6E9280F40FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7286B863-2A52-4E16-9452-6E9280F40FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7286B863-2A52-4E16-9452-6E9280F40FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7286B863-2A52-4E16-9452-6E9280F40FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0246BE17-B397-44E9-A02C-A0E54876D5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0246BE17-B397-44E9-A02C-A0E54876D5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0246BE17-B397-44E9-A02C-A0E54876D5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0246BE17-B397-44E9-A02C-A0E54876D5A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
