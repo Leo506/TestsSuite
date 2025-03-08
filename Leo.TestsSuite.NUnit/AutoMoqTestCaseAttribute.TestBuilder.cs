@@ -19,9 +19,9 @@ public partial class AutoMoqTestCaseAttribute
         {
             ArgumentNullException.ThrowIfNull(method);
             ArgumentNullException.ThrowIfNull(parameterValues);
-            var parms = GetParametersForMethod(method, parameterValues, autoDataStartIndex);
-            parms.ExpectedResult = attribute.ExpectedResult;
-            return new NUnitTestCaseBuilder().BuildTestMethod(method, suite, parms);
+            var parameters = GetParametersForMethod(method, parameterValues, autoDataStartIndex);
+            SetExpectedResult(method, parameters);
+            return new NUnitTestCaseBuilder().BuildTestMethod(method, suite, parameters);
         }
 
         private static TestCaseParameters GetParametersForMethod(
@@ -68,6 +68,12 @@ public partial class AutoMoqTestCaseAttribute
             Array.Copy(parameters.OriginalArguments, destinationArray, parameters.OriginalArguments.Length);
             typeof(TestParameters).GetTypeInfo().GetProperty("OriginalArguments")
                 ?.SetValue(parameters, destinationArray, null);
+        }
+        
+        private void SetExpectedResult(IMethodInfo method, TestCaseParameters parameters)
+        {
+            if (method.ReturnType.Type != typeof(void))
+                parameters.ExpectedResult = attribute.ExpectedResult;
         }
 
         private class TypeNameRenderer(Type type)

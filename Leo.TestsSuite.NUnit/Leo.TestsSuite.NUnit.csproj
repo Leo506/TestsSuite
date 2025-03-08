@@ -8,7 +8,7 @@
         <IsPackable>true</IsPackable>
         <PackageId>Leo.TestsSuite.NUnit</PackageId>
         <Authors>Levin Artem</Authors>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <Title>Tests suite for NUnit</Title>
         <Description>Library with all you need for unit testing</Description>
@@ -21,10 +21,7 @@
     <ItemGroup>
         <PackageReference Include="AutoFixture.NUnit3" Version="4.18.1"/>
         <PackageReference Include="FluentAssertions" Version="7.0.0"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\Leo.TestsSuite.Core\Leo.TestsSuite.Core.csproj"/>
+        <PackageReference Include="Leo.TestsSuite.Core" Version="1.0.0" />
     </ItemGroup>
 
 </Project>

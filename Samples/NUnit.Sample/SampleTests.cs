@@ -25,7 +25,11 @@ public class SampleTests
     [AutoMoqTestCase("123", ExpectedResult = "123")]
     [AutoMoqTestCase("12345", ExpectedResult = "12345")]
     [AutoMoqTestCase("---", ExpectedResult = "---")]
-    public string Test3(string value, Mock<ISomeDependency> mockDependency) => value;
+    public string Test3(string value, Mock<ISomeDependency> _) => value;
+
+    [Test]
+    [AutoMoqTestCase(null, ExpectedResult = null)]
+    public object Test4(object value, Mock<ISomeDependency> _) => value;
 
     public interface ISomeDependency;
 }
