@@ -72,7 +72,7 @@ public partial class AutoMoqTestCaseAttribute
         
         private void SetExpectedResult(IMethodInfo method, TestCaseParameters parameters)
         {
-            if (method.ReturnType.Type != typeof(void))
+            if (method.ReturnType.Type != typeof(void) && method.ReturnType.Type != typeof(Task))
                 parameters.ExpectedResult = attribute.ExpectedResult;
         }
 

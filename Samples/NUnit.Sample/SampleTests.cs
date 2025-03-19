@@ -31,5 +31,23 @@ public class SampleTests
     [AutoMoqTestCase(null, ExpectedResult = null)]
     public object Test4(object value, Mock<ISomeDependency> _) => value;
 
-    public interface ISomeDependency;
+    [Test]
+    [AutoMoqTestCase("123")]
+    public Task Test5(string value, Mock<ISomeDependency> _)
+    {
+        return Task.CompletedTask;
+    }
+
+    [Test]
+    public void Test6()
+    {
+        var mockDependency = new Mock<ISomeDependency>() { CallBase = true };
+        
+        mockDependency.Object.SomeMethod().Should().Be(1);
+    }
+
+    public interface ISomeDependency
+    {
+        int SomeMethod() => 1;
+    }
 }
