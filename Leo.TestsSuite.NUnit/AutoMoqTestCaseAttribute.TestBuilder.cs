@@ -17,8 +17,8 @@ public partial class AutoMoqTestCaseAttribute
             IEnumerable<object> parameterValues,
             int autoDataStartIndex)
         {
-            ArgumentNullException.ThrowIfNull(method);
-            ArgumentNullException.ThrowIfNull(parameterValues);
+            if (method == null) throw new ArgumentNullException(nameof(method));
+            if (parameterValues == null) throw new ArgumentNullException(nameof(parameterValues));
             var parameters = GetParametersForMethod(method, parameterValues, autoDataStartIndex);
             SetExpectedResult(method, parameters);
             return new NUnitTestCaseBuilder().BuildTestMethod(method, suite, parameters);

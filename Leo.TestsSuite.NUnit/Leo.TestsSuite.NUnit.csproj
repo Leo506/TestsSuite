@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <LangVersion>latest</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsPackable>true</IsPackable>
         <PackageId>Leo.TestsSuite.NUnit</PackageId>
         <Authors>Levin Artem</Authors>
-        <Version>1.0.2</Version>
+        <Version>1.0.3</Version>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <Title>Tests suite for NUnit</Title>
         <Description>Library with all you need for unit testing</Description>
