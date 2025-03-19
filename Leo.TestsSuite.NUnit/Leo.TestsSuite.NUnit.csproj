@@ -8,7 +8,7 @@
         <IsPackable>true</IsPackable>
         <PackageId>Leo.TestsSuite.NUnit</PackageId>
         <Authors>Levin Artem</Authors>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <Title>Tests suite for NUnit</Title>
         <Description>Library with all you need for unit testing</Description>
